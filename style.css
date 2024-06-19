@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container{
+    min-height: 15vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    gap: 2.5rem;
+    background-color: #003C43;
+    height: 15vh;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index:99999;
+
+
+}
+
+.icon{
+    color: azure;
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+    
+    
+}
+
+.navbar li{
+    list-style: none;
+
+}
+
+.navbar li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: aliceblue;
+    position: relative;
+}
+
+.section1{
+    display: flex;
+    
+}
+
+.topleft,.topright{
+    height: 85vh;
+    padding-top: 150px;
+    align-items: center;
+}
+
+.topleft{
+    padding-left: 3rem;
+    background-color: #135D66;
+    width: 80%;
+   
+}
+
+.contant{
+    margin-left: 2rem;
+}
+
+.contant .intro{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.contant .intro span{
+    color: #5DB9EE;
+}
+
+.contant h1{
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.contant .Text{
+    font-size: 1rem;
+    color: bisque;
+    width: 700px;
+    margin: 1rem 0 3rem 0;
+    line-height: 2rem;
+}
+
+.btn button{
+     border: .3rem solid rgb(36, 103, 12);
+     font-size: 1rem;
+     padding: .7rem 1.5rem;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+button:nth-child(1)
+{
+    background: #5DB9EE;
+    color: #003C43;
+}
+
+button:nth-child(2)
+{
+    background: transparent;
+    color: #5DB9EE;
+    margin-left: 2rem;
+}
+
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+
+button:nth-child(2):hover{
+    background:  #5DB9EE;
+    color: #003C43;
+}
+
+.topright{
+    background: linear-gradient(-45deg ,#77B0AA ,#135D66 70%);
+    width: 20%;
+}
+
+.deco .circle{
+    aspect-ratio: 1;
+    margin: auto;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50% , -50%);
+
+
+}
+
+.circle:nth-child(1){
+    width: 25rem;
+    background-color: #003C43
+    
+}
+
+.circle:nth-child(2){
+    background-image: url("profile.png.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .3rem solid white;
+    box-shadow: 0 0 2rem #ffffff ,inset 0 0 2rem #ffffff , 0 0 3rem #0c0e12 , inset 0 0 3rem #0c0e12 ,0 0 5rem #0c0e12 , inset 0 0 5rem #0c0e12;
+    width: 20rem;
+}
+
+.navbar li a::after{
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+
+}
+
+.navbar li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.section2{
+    height: 120vh;
+    background-color: #135D66;
+}
+.flex2{
+    display: flex;
+    padding-left: 40px;
+}
+
+.box{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.square1{
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: .1rem solid white;
+    box-shadow: 0 0 1rem #ffffff , 0 0 1.5rem #0c0e12 , inset 0 0 1.5rem #0c0e12 ,0 0 2rem #0c0e12 , inset 0 0 2rem #0c0e12;
+    height: 5rem;
+    width: 5rem;
+    
+}
+
+.section3{
+    height: 220vh;
+    background-color: #135D66;
+}
+
+.personal{
+    display: flex;
+    height: 10vh;
+    background-color: #003C43;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+}
+
+.info{
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.heading2{
+    font-size: 3rem;
+    color: rgb(81, 34, 161);
+}
+
+.para{
+    font-size: 1rem;
+    color: bisque;
+    width: 900px;
+    margin: 1rem 0 3rem 0;
+    line-height: 2rem;
+}
+
+.Tleft{
+    padding-left: 3rem;
+    background-color: #135D66;
+    width: 70%; 
+}
+
+.TR{
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg ,#77B0AA ,#135D66 70%);
+    width: 30%;
+}
+
+.square{
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: .1rem solid white;
+    box-shadow: 0 0 1rem #ffffff ,inset 0 0 1rem #ffffff , 0 0 1.5rem #0c0e12 , inset 0 0 1.5rem #0c0e12 ,0 0 2rem #0c0e12 , inset 0 0 2rem #0c0e12;
+    height: 10rem;
+    width: 10rem;
+    
+}
+
+
+
+.section4{
+    height: 200vh;
+    background-color: #135D66;
+}
+
+.flex1{
+    display: flex;
+    padding: 20px;
+    
+}    
+
+.para1{
+    font-size: 1rem;
+    color: bisque;
+    width: 1000px;
+    margin: 1rem 0 2rem 0;
+    
+    line-height: 1rem;
+}
+
+.info1{
+    margin-top: .5rem;
+    margin-left: 5rem;
+    color: #ffffff;
+}
+
+.footer{
+    display: flex;
+    background-color: #213031;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    color: #ffffff;
+}
